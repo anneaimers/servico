@@ -19,16 +19,12 @@ public class Orcamento {
         }
     }
 
-    public double calcularTotal(){
+    public double calcularTotal() {
         double soma = 0;
-        if (servicos.isEmpty()) {
-            return 0;
-        } else {
-            for (Servico servico : servicos) {
-            soma = soma + servico.calcularValor();
+        for (Servico servico : servicos) {
+            soma += servico.calcularValor();
         }
         return soma;
-        }
     }
 
 }
