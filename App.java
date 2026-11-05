@@ -6,7 +6,16 @@ public class App {
     Servico dom2 = new ServicoDomiciliar("fiacao do quarto", 150, 5);
     Servico urg = new ServicoUrgente("encanamento", 150);
 
-    orcamento.adicionarServico(comum);
+    Orcamento o = new Orcamento(null);
+
+    o.adicionarServico(comum);
+    o.adicionarServico(urg);
+    o.adicionarServico(dom);
+    o.adicionarServico(dom2);
+
+    o.listarServicos();
+
+    System.out.println(o.calcularTotal());
 
 
 
