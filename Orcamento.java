@@ -4,7 +4,7 @@ public class Orcamento {
 
     protected ArrayList<Servico> servicos;
 
-    public Orcamento(ArrayList<Servico> servicos) {
+    public Orcamento() {
         this.servicos = new ArrayList<>();
     }
 
